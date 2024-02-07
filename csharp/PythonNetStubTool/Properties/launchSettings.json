@@ -2,7 +2,7 @@
   "profiles": {
     "PythonNetStubTool": {
       "commandName": "Project",
-      "commandLineArgs": "--dest-path=C:\\Repos\\Animo\\AnimoTrainer\\typings --search-paths=\"%userprofile%\\.nuget\\packages\" --target-dlls=\"C:\\Repos\\Animo\\AnimoUnity\\Assets\\DLLs\\AnimoSimulation.dll\",\"C:\\Repos\\Animo\\AnimoUnity\\Assets\\DLLs\\AnimoDatabase.dll\""
+      "commandLineArgs": "--dest-path=%userprofile%\\source\\repos\\PyBarracuda\\src\\pybarracuda\\stubs --search-paths=\"%userprofile%\\.nuget\\packages\" --target-dlls=\"%userprofile%\\source\\repos\\PyBarracuda\\DLLs\\Tst.Mka.Mako.dll, %userprofile%\\source\\repos\\PyBarracuda\\DLLs\\Barracuda.Sdk.dll, %userprofile%\\source\\repos\\PyBarracuda\\DLLs\\Barracuda.MarketImpactModels.dll, %userprofile%\\source\\repos\\PyBarracuda\\DLLs\\Barracuda.MarketInterface.dll, %userprofile%\\source\\repos\\PyBarracuda\\DLLs\\Barracuda.Sdk.Referential.dll, %userprofile%\\source\\repos\\PyBarracuda\\DLLs\\Barracuda.SimulationMarket.dll\""
     }
   }
 }
