@@ -25,7 +25,7 @@ namespace PythonNetStubTool
             var infos = new List<FileInfo>();
             foreach (var pathStr in targetDlls.Split(','))
             {
-                var assemblyPath = new FileInfo(pathStr);
+                var assemblyPath = new FileInfo(pathStr.Trim());
                 if (!assemblyPath.Exists)
                 {
                     Console.WriteLine($"error: can not find {assemblyPath}");
