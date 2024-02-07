@@ -82,7 +82,6 @@ namespace PythonNetStubGenerator
 
             var stubText = StubWriter.GetStub(nameSpace, orderedTypes);
 
-
             File.WriteAllText(path, stubText);
         }
 

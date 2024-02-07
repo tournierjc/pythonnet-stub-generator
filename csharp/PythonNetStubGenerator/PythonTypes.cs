@@ -57,8 +57,11 @@ namespace PythonNetStubGenerator
         public static void AddDependency(Type t)
         {
             var isNewAdd = AllExportedTypes.Add(t);
-            if (isNewAdd) DirtyNamespaces.Add(t.Namespace);
-            if (t != typeof(Nullable<>)) CurrentTypes.Add(t);
+            if (isNewAdd && t.Namespace != null)
+            {
+                DirtyNamespaces.Add(t.Namespace);
+                if (t != typeof(Nullable<>)) CurrentTypes.Add(t);
+            }
         }
 
         public static void AddArrayDependency(bool isGeneric)
